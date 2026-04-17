@@ -6,7 +6,7 @@ Zen of Python!
 4.alexkovalchuk26051991-sketch
 5.MyroslavShchupel
 6.ValeryLyt
-7.borisme78
+7.Readability counts.
 8.SofiiaVoitkiv
 9.AnnaVncky
 10.amik5
