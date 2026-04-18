@@ -18,7 +18,7 @@ Zen of Python!
 16.nattikka
 17.
 18.
-19.
+19.Namespaces are one honking great idea -- let's do more of those!
 20.
 21.
 22.
