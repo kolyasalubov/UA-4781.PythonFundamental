@@ -2,7 +2,7 @@ Zen of Python!
 
 1.Beautiful is better than ugly.
 2.xVitaliyx
-3.VlasenkoYuliia
+3.Simple is better than complex.
 4.alexkovalchuk26051991-sketch
 5.MyroslavShchupel
 6.ValeryLyt
