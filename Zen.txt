@@ -4,7 +4,7 @@ Zen of Python!
 2.xVitaliyx
 3.Simple is better than complex.
 4.Complex is better than complicated.
-5.MyroslavShchupel
+5.Flat is better than nested.//MyroslavShchupel
 6.Sparse is better than dense.
 7.Readability counts.
 8.SofiiaVoitkiv
