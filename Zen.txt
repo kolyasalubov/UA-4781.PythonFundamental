@@ -8,7 +8,7 @@ Zen of Python!
 6.Sparse is better than dense.
 7.Readability counts.
 8.SofiiaVoitkiv
-9.AnnaVncky
+9.Although practicality beats purity.
 10.amik5
 11.Makcsol
 12.Leriaroyoli
