@@ -11,7 +11,7 @@ Zen of Python!
 9.Although practicality beats purity.
 10.amik5
 11.Makcsol
-12.Leriaroyoli
+12.In the face of ambiguity, refuse the temptation to guess. //Leriaroyoli
 13.YuriiSaliuk
 14.Yaremll
 15.danik05
