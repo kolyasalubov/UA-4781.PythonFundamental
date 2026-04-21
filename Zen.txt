@@ -13,7 +13,7 @@ Zen of Python!
 11.Makcsol
 12.In the face of ambiguity, refuse the temptation to guess. //Leriaroyoli
 13.YuriiSaliuk
-14.Yaremll
+14.Although that way may not be obvious at first unless you're Dutch.
 15.danik05
 16.Although never is often better than *right* now.
 17.
