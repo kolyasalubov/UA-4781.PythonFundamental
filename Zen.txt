@@ -10,7 +10,7 @@ Zen of Python!
 8.Special cases aren't special enough to break the rules.
 9.Although practicality beats purity.
 10.amik5
-11.Makcsol
+11.Unless explicitly silenced.
 12.In the face of ambiguity, refuse the temptation to guess. //Leriaroyoli
 13.YuriiSaliuk
 14.Although that way may not be obvious at first unless you're Dutch.
