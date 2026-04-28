@@ -225,4 +225,8 @@ pyrightconfig.json
 .history
 .ionide
 
-# End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,macos
+# Marimo
+marimo/_static/
+marimo/_lsp/
+__marimo__/
+.DS_Store
