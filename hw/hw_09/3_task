@@ -44,7 +44,6 @@ def get_weather():
         label.config(text=result, bg='gold')
 
     except Exception as e:
-        # Якщо місто не знайдено або інша помилка
         label.config(text=f"Помилка:\n{str(e)}", bg='tomato')
 
 
