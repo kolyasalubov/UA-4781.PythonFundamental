@@ -1,0 +1,84 @@
+import tkinter as tk
+from pyowm import OWM
+
+
+API_KEY = 'key'
+HEIGHT = 350
+WIDTH = 450
+
+
+def get_weather():
+    city = entry_field.get()          
+    if not city:
+        label.config(text="Введіть назву міста!", bg='tomato')
+        return
+
+    try:
+        owm = OWM(API_KEY)          
+        mgr = owm.weather_manager()
+        observation = mgr.weather_at_place(city)  
+        w = observation.weather
+
+      
+        status = w.detailed_status.capitalize()
+        temp = w.temperature('celsius')
+        temp_now = round(temp['temp'], 1)
+        temp_min = round(temp['temp_min'], 1)
+        temp_max = round(temp['temp_max'], 1)
+        humidity = w.humidity
+        wind_speed = w.wind().get('speed', 0)
+        clouds = w.clouds
+
+        
+        result = (
+            f"🌍 Місто: {city}\n\n"
+            f"☁️  Стан: {status}\n"
+            f"🌡️  Температура: {temp_now}°C\n"
+            f"🔼 Макс: {temp_max}°C  🔽 Мін: {temp_min}°C\n"
+            f"💧 Вологість: {humidity}%\n"
+            f"💨 Вітер: {wind_speed} м/с\n"
+            f"☁️  Хмарність: {clouds}%"
+        )
+
+        
+        label.config(text=result, bg='gold')
+
+    except Exception as e:
+        label.config(text=f"Помилка:\n{str(e)}", bg='tomato')
+
+
+
+root = tk.Tk()
+root.title("Weather Application")
+
+canvas = tk.Canvas(root, height=HEIGHT, width=WIDTH)
+canvas.pack()
+
+
+frame = tk.Frame(root, bg="deep sky blue", bd=5)
+frame.place(relx=0.5, rely=0.1, relwidth=0.75, relheight=0.1, anchor='n')
+
+entry_field = tk.Entry(frame, font=('Courier', 12))
+entry_field.place(relx=0, rely=0, relwidth=0.65, relheight=1)
+entry_field.insert(0, "London,GB")  
+
+button = tk.Button(frame,
+                   text="Get Weather",
+                   bg="gray", fg="white",
+                   font=('Courier', 8),
+                   command=get_weather)  
+button.place(relx=0.7, rely=0, relwidth=0.3, relheight=1)
+
+
+lower_frame = tk.Frame(root, bg='gold', bd=10)
+lower_frame.place(relx=0.5, rely=0.25, relwidth=0.75, relheight=0.6, anchor='n')
+
+label = tk.Label(lower_frame,
+                 font=('Courier', 12),
+                 justify='left',
+                 anchor='nw',
+                 wraplength=300)
+label.place(relx=0, rely=0, relwidth=1, relheight=1)
+
+
+root.mainloop()

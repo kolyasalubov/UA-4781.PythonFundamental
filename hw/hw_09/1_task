@@ -1,0 +1,20 @@
+from random import randint
+
+secret_number = randint(1, 100)
+attempts = 0
+
+print("Вгадай число від 1 до 100! У тебе 10 спроб.")
+
+while attempts < 10:
+    guess = int(input("Введіть число: "))
+    attempts += 1
+    
+    if guess < secret_number:
+        print("Більше!")
+    elif guess > secret_number:
+        print("Менше!")
+    else:
+        print(f"Вітаю! Ти вгадав число {secret_number} за {attempts} спроб!")
+        break
+else:
+    print(f"На жаль, спроби закінчились. Було загадано число {secret_number}")
