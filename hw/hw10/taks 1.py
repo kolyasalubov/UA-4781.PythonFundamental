@@ -15,3 +15,5 @@ class Rectangle(Polygon):
 rectangles = Rectangle (15,5)
 
 print(rectangles.findArea())
+
+#75

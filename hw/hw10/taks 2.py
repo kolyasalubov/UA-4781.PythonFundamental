@@ -8,7 +8,7 @@ class Human():
     @classmethod
 
     def class_method(cls):
-        return "This kind of Homosapiens"
+        return "This kindп of Homosapiens"
     
 
     @staticmethod
